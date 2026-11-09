@@ -1,6 +1,6 @@
 # Curator-Aware Unlearning (delta-cure)
 
-[![CI](https://github.com/OWNER/delta-cure/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/delta-cure/actions/workflows/ci.yml)
+[![CI](https://github.com/IshritRai/delta-cure/actions/workflows/ci.yml/badge.svg)](https://github.com/IshritRai/delta-cure/actions/workflows/ci.yml)
 
 A deletion service for ML training pipelines. Many pipelines use a **learned filter** (a quality
 classifier) to decide which records reach the model. When a record is deleted, today's tools
@@ -45,7 +45,7 @@ first used each record, so replay starts as late as possible. See
 Requires Python 3.11.
 
 ```bash
-git clone https://github.com/OWNER/delta-cure.git
+git clone https://github.com/IshritRai/delta-cure.git
 cd delta-cure
 python3.11 -m venv .venv
 source .venv/bin/activate
