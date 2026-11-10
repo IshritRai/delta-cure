@@ -8,9 +8,9 @@ The project is pre-1.0. Only the latest commit on `main` receives fixes.
 
 Please do not open a public issue for a security problem.
 
-- Once the repository is public, use GitHub's private vulnerability reporting: the
-  **Security** tab → **Report a vulnerability**.
-- Until then, contact the maintainer directly through GitHub.
+Use GitHub's private vulnerability reporting: the **Security** tab → **Report a
+vulnerability**. If that option is not available, contact the maintainer directly through
+GitHub.
 
 Include what you found, how to reproduce it, and the commit you tested. You can expect an
 acknowledgement, an assessment, and a note in `CHANGELOG.md` when a fix is released.

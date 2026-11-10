@@ -12,8 +12,9 @@ as a new minor version (milestone 1 → `0.1.0`).
 - Project scaffold: package layout, ruff, mypy, pytest with coverage, pre-commit and CI.
 - Engineering scope, design notes, product requirements document and architecture decision
   records 0001–0008.
-- Locked dependency tree (`uv.lock`) and locked installs in CI.
+- Locked dependency tree (`uv.lock`) and locked installs in CI; GitHub Actions pinned to commit
+  SHAs.
 - Dependency vulnerability audit, repository hygiene hooks and a coverage threshold in CI.
-- CodeQL workflow that runs once the repository is public.
+- CodeQL code scanning for Python and GitHub Actions workflows.
 - Dependabot updates for Python dependencies and GitHub Actions.
 - Pull request and issue templates, security policy and this changelog.
