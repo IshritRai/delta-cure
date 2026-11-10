@@ -53,15 +53,14 @@ ends by purging superseded checkpoints and other derived artifacts.
 
 ## Setup
 
-Requires Python 3.11.
+Requires [uv](https://docs.astral.sh/uv/), which installs Python 3.11 and the locked
+dependencies.
 
 ```bash
 git clone https://github.com/IshritRai/delta-cure.git
 cd delta-cure
-python3.11 -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev]"
-pre-commit install
+uv sync --locked
+uv run pre-commit install
 ```
 
 ## Run
@@ -70,9 +69,9 @@ The pipeline, deletion engine and API are not implemented yet; run commands will
 each milestone lands. To run the checks:
 
 ```bash
-ruff check . && ruff format --check .
-mypy
-pytest
+uv run ruff check . && uv run ruff format --check .
+uv run mypy
+uv run pytest
 ```
 
 ## Results
@@ -81,7 +80,8 @@ Results: to be added from our own runs.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues: [SECURITY.md](SECURITY.md). Changes:
+[CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
