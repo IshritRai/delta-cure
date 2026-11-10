@@ -1,5 +1,17 @@
-# Hooks run the tool versions pinned in pyproject.toml (install with: pip install -e ".[dev]").
+# Local hooks run the tool versions locked in uv.lock: run `uv run pre-commit install` once,
+# and commit from an environment where the project's .venv is active (or use `uv run git commit`).
 repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+      - id: detect-private-key
   - repo: local
     hooks:
       - id: ruff-check
